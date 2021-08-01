@@ -12,6 +12,5 @@ COPY . /app/
 RUN pip3 install -U -r requirements.txt
 RUN apt-get remove -y youtube-dl
 RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
-hash -r
 RUN pip install --upgrade pip
 CMD python3 -m main.py
