@@ -11,4 +11,5 @@ WORKDIR /app/
 COPY . /app/
 RUN pip3 install -U -r requirements.txt
 RUN pip install -U youtube_dl
+RUN pip install --upgrade pip
 CMD python3 -m main.py
